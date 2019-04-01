@@ -8,15 +8,33 @@
 }
 
 .header__navbar  button {
-  width: 82px;
-  height: 39px;
+  width: 100px;
+  height: 40px;
   background: none;
   border: none;
+  color: #FFF;
 }
 
-.header__navbar span {
+.header__navbar__menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__menu__icon{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 17px;
+  margin-left: 5px;
+}
+
+.navbar__menu__icon span {
   display: block;
   width: 20px;
   height: 2px;
-  background-color: #fff;
+  background-color:#4ca9ff;
+}
+
+.navbar__menu__icon span:nth-child(2) {
+  width: 15px;
 }
