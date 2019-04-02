@@ -6,8 +6,10 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-
+body {
+	font: 400 18px/30px $primaryFont;
+}
 .wrapper {
-	width: 1169px;
+	max-width: 1169px;
 	margin: 0 auto;
 }
