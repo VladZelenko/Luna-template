@@ -5,10 +5,14 @@
   color: $default-color;
 }
 
+.mobile-app>.wrapper {
+  width: 1200px;
+}
+
 .mobile-app__grid {
-  padding: 0 0 15px 40px ;
+  padding-bottom: 50px ;
   display: grid;
-	grid-template-columns: 530px 541px;
+	grid-template-columns: 550px 541px;
   grid-column-gap: 127px;
 }
 
