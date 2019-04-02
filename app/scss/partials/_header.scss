@@ -1,0 +1,43 @@
+// header style
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  min-height: 33px;
+}
+
+.header__navbar  button {
+  width: 100px;
+  height: 40px;
+  background: none;
+  border: none;
+  font: 400 18px $primaryFont;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.header__navbar__menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__menu__icon{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 17px;
+  margin-left: 5px;
+}
+
+.navbar__menu__icon span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color:#4ca9ff;
+  border-radius: 1px;
+}
+
+.navbar__menu__icon span:nth-child(2) {
+  width: 15px;
+}
