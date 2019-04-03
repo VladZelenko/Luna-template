@@ -41,13 +41,6 @@
   border-radius: 5px;
 }
 
-.service__technology {
-  margin-top: 49px;
-  display: grid;
-  grid-template-columns: 197px 197px 197px 197px;
-  grid-column-gap: 103px;
-}
-
 .owl-dots button {
   width: 25%;
   height: 1px;
@@ -60,4 +53,21 @@
   height: 3px;
   background-color: $default-color;
   opacity: 1;
+}
+
+.mobile-app__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mobile-app__footer p{
+  margin-top: 49px;
+  color: #cfd2ff;
+  font: 400 16px $primaryFont;
+  text-transform: uppercase;
+}
+
+.mobile-app__footer h3{
+  font: 400 24px $primaryFont;
 }
