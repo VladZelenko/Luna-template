@@ -1,6 +1,6 @@
 @media (max-width: 992px) {
   .service-box {
-    justify-items: center;
+      justify-items: center;
       grid-template-areas: 
         "item-1"
         "item-2"
@@ -8,4 +8,15 @@
     }
     .service-box__item { width: 400px; }
 
+    .mobile-app__grid {
+      grid-template-areas: 
+        "item-2"
+        "item-1";
+    }
+
+    .mobile-app__footer {
+      grid-template-areas: 
+        "item-1 item-2"
+        "item-3 item-4";
+    }
 }

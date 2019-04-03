@@ -12,8 +12,13 @@
 .mobile-app__grid {
   padding-bottom: 50px ;
   display: grid;
-	grid-template-columns: 550px 541px;
+	grid-template-columns: minmax(320px, 550px) minmax(320px, 541px);
   grid-column-gap: 127px;
+  grid-template-areas: 
+    "item-1 item-2";
+
+  .item-1 { grid-area: item-1; }
+  .item-2 { grid-area: item-2; }
 }
 
 .mobile-app .item:last-child {
@@ -56,9 +61,16 @@
 }
 
 .mobile-app__footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+	grid-template-columns: 200px 200px 200px 200px;
+  grid-column-gap: 125px;
+  grid-template-areas: 
+    "item-1 item-2 item-3 item-4";
+
+  .item-1 { grid-area: item-1; }
+  .item-2 { grid-area: item-2; }
+  .item-3 { grid-area: item-3; }
+  .item-4 { grid-area: item-4; }
 }
 
 .mobile-app__footer p{
