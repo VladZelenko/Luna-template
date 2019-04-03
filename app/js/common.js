@@ -1,10 +1,10 @@
 $(document).ready(function(){
   $('.owl-carousel').owlCarousel({
     items: 1,
+    loop: true,
     center: true,
-    dots: true,
     margin: 40,
-    stagePadding: 15
-    
+    stagePadding: 15,
+    dotClass: true
   });
 });
