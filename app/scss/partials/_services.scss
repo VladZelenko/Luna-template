@@ -8,9 +8,14 @@
 
 .service-box {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 83px;
   grid-row-gap: 111px;
+  grid-template-areas: 
+    "item-1 item-2 item-3";
+
+  .item-1 { grid-area: item-1; }
+  .item-2 { grid-area: item-2; }
+  .item-3 { grid-area: item-3; }
 }
 
 .service-box__item:hover {

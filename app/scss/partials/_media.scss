@@ -1,0 +1,11 @@
+@media (max-width: 992px) {
+  .service-box {
+    justify-items: center;
+      grid-template-areas: 
+        "item-1"
+        "item-2"
+        "item-3";
+    }
+    .service-box__item { width: 400px; }
+
+}
