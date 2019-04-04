@@ -30,6 +30,8 @@
     grid-column-gap: 20px;
   }
   .mobile-app__grid {
+    grid-template-columns: minmax(320px, 600px);
+    justify-content: center;
     grid-template-areas: 
       "item-2"
       "item-1";
