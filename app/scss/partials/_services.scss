@@ -34,7 +34,7 @@
 .service__title {
   color: #40485a;
   font-family: Roboto;
-  font-size: 48px;
+  font-size: rem(48);
   font-weight: 300;
 }
 
@@ -44,7 +44,7 @@
   margin: 34px 0 21px 0;
   color: #40485a;
   font-family: Roboto;
-  font-size: 18px;
+  font-size: rem(18);
   font-weight: 700;
   text-transform: uppercase;
 }

@@ -2,12 +2,8 @@
 //    Base Style  ---------------//
 // ------------------------------ //
 
-
-// ---------Reset--------------- //
 @import "reset";
-// ---------Variables---------- //
 @import "variables";
-// ---------Base--------------- //
+@import "mixins";
 @import "base";
-// ---------Fonts---------- //
 @import "fonts";

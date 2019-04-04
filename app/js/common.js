@@ -13,3 +13,9 @@ $(document).ready(function(){
     responsiveClass:true,
   });
 });
+
+$(".intro__scroll-down").click(function() {
+  $([document.documentElement, document.body]).animate({
+      scrollTop: $(".services").offset().top
+  }, 1500);
+});

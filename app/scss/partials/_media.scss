@@ -1,4 +1,19 @@
-@media (max-width: 992px) {
+@media (max-width: $phoneWidth) {
+  .mobile-app__footer {
+    grid-column-gap: 20px;
+    grid-template-areas: 
+    "item-1" 
+    "item-2"
+    "item-3"
+    "item-4";
+  }
+
+  .mobile-app {
+    .item:last-child { grid-column-gap: 5px; }
+  }
+}
+
+@media (max-width: $smDesktopWidth) {
   .service-box {
       justify-items: center;
       grid-template-areas: 
@@ -7,45 +22,48 @@
         "item-3";
     }
     .service-box__item { grid-template-columns: minmax(200px, 400px) }
-
-     
-
-    .mobile-app .owl-carousel {
-      width: 990px;
-      margin: 0 auto;
-
-      
-    }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: $desktopWidth) {
   .mobile-app__footer {
     grid-template-areas: 
       " . item-1 item-2 . "
       " . item-3 item-4 . ";
     justify-content: center;
   }
+
+  .mobile-app__button { margin: 70px auto 30px; }
+
   .mobile-app .owl-dots {
     grid-template-columns: 80px 80px 80px 80px;
     grid-column-gap: 20px;
   }
+
   .mobile-app__grid {
+    text-align: center;
     grid-template-columns: minmax(320px, 600px);
     justify-content: center;
     grid-template-areas: 
       "item-2"
       "item-1";
   } 
+  .item {justify-content: center; }
 }
 
-@media (max-width: 550px) {
+
+@media (max-width: $tableWidth) {
   .mobile-app__footer {
-    grid-template-columns:4fr;
+    grid-column-gap: 20px;
     grid-template-areas: 
-    ". item-1 ."
-    ". item-2 ."
-    ". item-3 ."
-    ". item-4 .";
-    justify-content: center;
+    " . item-1 item-2 . "
+    " . item-3 item-4 . ";
+    p {font-size: rem(14)}
+    h3 {font-size: rem(18)}
+  }
+
+  .mobile-app {
+    .item:last-child {
+      grid-column-gap: 21px;
+    }
   }
 }

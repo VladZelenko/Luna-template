@@ -6,27 +6,31 @@
 
   .item:last-child {
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: minmax(100px, 200px) minmax(100px, 200px);
     grid-column-gap: 71px;
+    grid-template-areas: 
+      "img-1 img-2";
   }
 
   .item img:first-child {
     margin-bottom: 20px;
     box-shadow: 0 70px 60px rgba(64, 72, 90, 0.3);
     border-radius: 5px;
+    grid-area: img-1;
   }
 
   .item img:last-child {
     margin-top: 20px;
     box-shadow: 0 50px 30px rgba(64, 72, 90, 0.3);
     border-radius: 5px;
+    grid-area: img-2;
   }
 }
 
 .mobile-app__grid {
   padding-bottom: 50px ;
   display: grid;
-	grid-template-columns: minmax(320px, 550px) minmax(320px, 541px);
+	grid-template-columns: minmax(280px, 550px) minmax(280px, 541px);
   grid-column-gap: 127px;
   grid-template-areas: 
     "item-1 item-2";
@@ -37,7 +41,7 @@
 
 .mobile-app__title {
   margin: 49px 0 26px;
-  font: 300 62px $primaryFont;
+  font: 300 rem(62) $primaryFont;
   &>span { color: $special-color; }
 }
 
@@ -61,7 +65,6 @@
 
 .mobile-app__footer {
   display: grid;
-	grid-template-columns: 200px 200px 200px 200px;
   grid-column-gap: 125px;
   grid-template-areas: 
     "item-1 item-2 item-3 item-4";
@@ -74,11 +77,11 @@
   p{
     margin-top: 49px;
     color: #cfd2ff;
-    font: 400 16px $primaryFont;
+    font: 400 rem(16) $primaryFont;
     text-transform: uppercase;
   }
 
   h3{
-    font: 400 24px $primaryFont;
+    font: 400 rem(24) $primaryFont;
   }
 }
