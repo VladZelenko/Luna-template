@@ -5,6 +5,11 @@ $(document).ready(function(){
     center: true,
     margin: 40,
     stagePadding: 15,
-    dotClass: true
+    dotClass: true,
+    itemsDesktop : true,
+    itemsDesktopSmall : true,
+    itemsTablet: true,
+    itemsMobile : true,
+    responsiveClass:true,
   });
 });

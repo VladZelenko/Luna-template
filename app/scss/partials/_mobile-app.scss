@@ -3,10 +3,24 @@
   min-height: 700px;
   background: radial-gradient(#4622af, #311e78);
   color: $default-color;
-}
 
-.mobile-app>.wrapper {
-  width: 1200px;
+  .item:last-child {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-column-gap: 71px;
+  }
+
+  .item img:first-child {
+    margin-bottom: 20px;
+    box-shadow: 0 70px 60px rgba(64, 72, 90, 0.3);
+    border-radius: 5px;
+  }
+
+  .item img:last-child {
+    margin-top: 20px;
+    box-shadow: 0 50px 30px rgba(64, 72, 90, 0.3);
+    border-radius: 5px;
+  }
 }
 
 .mobile-app__grid {
@@ -21,43 +35,28 @@
   .item-2 { grid-area: item-2; }
 }
 
-.mobile-app .item:last-child {
-  display: grid;
-	grid-template-columns: 200px 200px;
-  grid-column-gap: 71px;
-}
-
 .mobile-app__title {
   margin: 49px 0 26px;
   font: 300 62px $primaryFont;
+  &>span { color: $special-color; }
 }
 
-.mobile-app__title>span { color: $special-color; }
-
-.mobile-app .item img:first-child {
-  margin-bottom: 20px;
-  box-shadow: 0 70px 60px rgba(64, 72, 90, 0.3);
-  border-radius: 5px;
-}
-
-.mobile-app .item img:last-child {
-  margin-top: 20px;
-  box-shadow: 0 50px 30px rgba(64, 72, 90, 0.3);
-  border-radius: 5px;
-}
-
-.owl-dots button {
-  width: 25%;
-  height: 1px;
-  opacity: 0.3;
-  background-color: $default-color;
+.owl-dots {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    
   
-}
+  button {
+    height: 1px;
+    opacity: 0.3;
+  }
 
-.owl-dots .active {
-  height: 3px;
-  background-color: $default-color;
-  opacity: 1;
+  .active {
+    height: 3px;
+    background-color: $default-color;
+    opacity: 1;
+  }
 }
 
 .mobile-app__footer {
@@ -71,15 +70,15 @@
   .item-2 { grid-area: item-2; }
   .item-3 { grid-area: item-3; }
   .item-4 { grid-area: item-4; }
-}
 
-.mobile-app__footer p{
-  margin-top: 49px;
-  color: #cfd2ff;
-  font: 400 16px $primaryFont;
-  text-transform: uppercase;
-}
+  p{
+    margin-top: 49px;
+    color: #cfd2ff;
+    font: 400 16px $primaryFont;
+    text-transform: uppercase;
+  }
 
-.mobile-app__footer h3{
-  font: 400 24px $primaryFont;
+  h3{
+    font: 400 24px $primaryFont;
+  }
 }

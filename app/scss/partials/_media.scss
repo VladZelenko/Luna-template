@@ -6,17 +6,44 @@
         "item-2"
         "item-3";
     }
-    .service-box__item { width: 400px; }
+    .service-box__item { grid-template-columns: minmax(200px, 400px) }
 
-    .mobile-app__grid {
-      grid-template-areas: 
-        "item-2"
-        "item-1";
-    }
+     
 
-    .mobile-app__footer {
-      grid-template-areas: 
-        "item-1 item-2"
-        "item-3 item-4";
+    .mobile-app .owl-carousel {
+      width: 990px;
+      margin: 0 auto;
+
+      
     }
+}
+
+@media (max-width: 1200px) {
+  .mobile-app__footer {
+    grid-template-areas: 
+      " . item-1 item-2 . "
+      " . item-3 item-4 . ";
+    justify-content: center;
+  }
+  .mobile-app .owl-dots {
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-column-gap: 20px;
+  }
+  .mobile-app__grid {
+    grid-template-areas: 
+      "item-2"
+      "item-1";
+  } 
+}
+
+@media (max-width: 550px) {
+  .mobile-app__footer {
+    grid-template-columns:4fr;
+    grid-template-areas: 
+    ". item-1 ."
+    ". item-2 ."
+    ". item-3 ."
+    ". item-4 .";
+    justify-content: center;
+  }
 }
